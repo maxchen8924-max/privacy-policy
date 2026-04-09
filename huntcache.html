@@ -20,7 +20,7 @@
 <body>
 <div class="container">
     <h1>HuntCache Privacy Policy</h1>
-    <p class="subtitle">Effective Date: March 30, 2026 | Last Updated: March 30, 2026</p>
+    <p class="subtitle">Effective Date: March 30, 2026 | Last Updated: April 9, 2026</p>
 
     <div class="highlight">
         <strong>Summary:</strong> HuntCache collects zero personal data. Your spots and logs stay on your device. No accounts, no cloud sync, no analytics, no ads, no tracking. Your secret spots die with your phone.
@@ -41,7 +41,7 @@
     </ul>
 
     <h2>3. Data Storage</h2>
-    <p>All data you enter (harvest records, catch logs, photos, and settings) is stored exclusively on your device using a local encrypted SQLite database. This data never leaves your device unless you explicitly choose to export your data.</p>
+    <p>All data you enter (harvest records, catch logs, and settings) is stored exclusively on your device in a local SQLite database. GPS coordinates are encrypted with AES-256-CBC before storage. Other record fields (species, weight, notes, etc.) and photos are stored unencrypted on-device. No data ever leaves your device unless you explicitly choose to export.</p>
 
     <h2>4. Location Data</h2>
     <p>HuntCache may request access to your device's GPS location to allow you to tag catch and harvest locations. Location data is:</p>
@@ -53,24 +53,34 @@
     </ul>
 
     <h2>5. Photos and Camera</h2>
-    <p>HuntCache may request access to your device's camera and photo library to allow you to add photos to your records. These photos are stored locally and never uploaded to any server.</p>
+    <p>HuntCache may request access to your device's camera and photo library to allow you to add photos to your records. Photos are re-encoded on save to remove EXIF metadata (including embedded GPS coordinates). Photos are stored locally on your device and never uploaded to any server. Photos are not encrypted.</p>
 
     <h2>6. Notifications</h2>
-    <p>HuntCache may request permission to send local push notifications for reminders. These notifications are generated entirely on your device.</p>
+    <p>HuntCache may send local push notifications for reminders (e.g., backup reminders, season-end alerts). Notifications are disabled by default and only enabled when you turn them on in Settings. These notifications are generated entirely on your device — no remote push servers are used.</p>
 
     <h2>7. Export</h2>
     <p>The App provides CSV and PDF export features. Export files are created locally on your device and shared through your device's native sharing system.</p>
 
     <h2>8. Third-Party Services</h2>
-    <p>HuntCache does not integrate with any third-party services, SDKs, or APIs. The App operates entirely offline.</p>
+    <p>HuntCache does not connect to any third-party servers, analytics services, or advertising networks. The App uses only platform-native APIs (system maps, camera, GPS) provided by iOS and Android. No third-party tracking SDKs are included. The App operates entirely offline — core features require no internet connection.</p>
 
     <h2>9. Children's Privacy</h2>
     <p>HuntCache does not knowingly collect any information from children under the age of 13.</p>
 
-    <h2>10. Changes to This Policy</h2>
+    <h2>10. Data Retention and Deletion</h2>
+    <p><strong>Retention:</strong> Your data is retained on your device for as long as you keep the App installed. There is no automatic expiration or remote deletion. The encryption key for GPS coordinates is stored in the App's local storage on your device; if you uninstall the App, this key is permanently lost and encrypted coordinates cannot be recovered.</p>
+    <p><strong>Deletion:</strong> You have full control over your data at all times:</p>
+    <ul>
+        <li>Individual records and photos can be deleted within the App at any time</li>
+        <li>All App data is completely removed by uninstalling HuntCache from your device</li>
+        <li>No data remains on any server after deletion, as no server-side data exists</li>
+        <li>There is no account data to request deletion of, since no accounts are created</li>
+    </ul>
+
+    <h2>11. Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. Changes will be reflected on this page with an updated date.</p>
 
-    <h2>11. Contact Us</h2>
+    <h2>12. Contact Us</h2>
     <p>If you have any questions, please contact us at:</p>
     <p><strong>Email:</strong> longchen8924@gmail.com</p>
 
