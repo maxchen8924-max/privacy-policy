@@ -3,75 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EquineVault Privacy Policy</title>
+    <title>Privacy Policy — EquineVault</title>
     <style>
-        *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.6;color:#333;background:#fafafa}
-        .container{max-width:720px;margin:0 auto;padding:40px 20px}
-        h1{font-size:28px;margin-bottom:8px;color:#111}
-        .subtitle{font-size:14px;color:#888;margin-bottom:32px}
-        h2{font-size:20px;margin-top:28px;margin-bottom:12px;color:#222}
-        p,li{font-size:15px;margin-bottom:12px;color:#444}
-        ul{padding-left:20px;margin-bottom:16px}
-        .highlight{background:#f0f7f0;border-left:3px solid #34c759;padding:12px 16px;border-radius:4px;margin:16px 0}
-        .footer{margin-top:48px;padding-top:20px;border-top:1px solid #e0e0e0;font-size:13px;color:#999}
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 680px; margin: 0 auto; padding: 24px 16px; color: #2C3E50; line-height: 1.7; }
+        h1 { color: #163424; border-bottom: 2px solid #AE8438; padding-bottom: 8px; }
+        h2 { color: #163424; margin-top: 32px; }
+        .last-updated { color: #666; font-size: 14px; }
+        .highlight { background: #FFF8E7; border-left: 4px solid #AE8438; padding: 12px 16px; margin: 16px 0; }
     </style>
 </head>
 <body>
-<div class="container">
-    <h1>EquineVault Privacy Policy</h1>
-    <p class="subtitle">Effective Date: March 30, 2026 | Last Updated: March 30, 2026</p>
+    <h1>🐴 EquineVault — Privacy Policy</h1>
+    <p class="last-updated">Last updated: April 16, 2026</p>
 
     <div class="highlight">
-        <strong>Summary:</strong> EquineVault collects zero personal data. All your horse health records stay on your device. No accounts, no cloud sync, no analytics, no ads, no tracking.
+        <strong>TL;DR:</strong> EquineVault collects absolutely no data. Your horse health records stay on your device, period.
     </div>
 
-    <h2>1. Introduction</h2>
-    <p>EquineVault ("the App") is a horse health record management application for iOS and Android. This Privacy Policy explains how we handle your information.</p>
+    <h2>1. Data Collection</h2>
+    <p>EquineVault does <strong>not</strong> collect, transmit, or store any personal data on external servers. All data you enter into the app — horse profiles, health records, vaccination schedules, farrier logs, Coggins test records, and photos — remains exclusively on your device.</p>
+    <p>We do not have access to your data. Period.</p>
 
-    <h2>2. Data Collection</h2>
-    <p>EquineVault does <strong>not</strong> collect, transmit, or store any personal data on external servers:</p>
+    <h2>2. No Third-Party Services</h2>
+    <p>EquineVault contains <strong>zero</strong> third-party SDKs, analytics frameworks, or tracking services. The app makes <strong>no network requests</strong> whatsoever.</p>
     <ul>
-        <li>No user accounts or registration required</li>
-        <li>No personal information is collected</li>
-        <li>No usage analytics or tracking</li>
-        <li>No advertising or ad-related tracking</li>
-        <li>No cookies or web tracking technologies</li>
-        <li>No third-party analytics SDKs</li>
+        <li>No analytics (Google Analytics, Firebase, Mixpanel, etc.)</li>
+        <li>No crash reporting (Crashlytics, Sentry, etc.)</li>
+        <li>No advertising SDKs</li>
+        <li>No social login</li>
+        <li>No cloud sync</li>
     </ul>
 
     <h2>3. Data Storage</h2>
-    <p>All data you enter (horse profiles, health records, vaccination schedules, photos, and settings) is stored exclusively on your device using a local SQLite database. This data never leaves your device unless you explicitly choose to export or back up your data.</p>
+    <p>All data is stored locally using Apple's SwiftData framework on your device. Data is encrypted when your device is locked (if you have a passcode enabled). Data is never uploaded, synced, or shared.</p>
 
-    <h2>4. Photos and Camera</h2>
-    <p>EquineVault may request access to your device's camera and photo library to allow you to photograph your horses and health documents. These photos are stored locally and never uploaded to any server.</p>
-
-    <h2>5. Notifications</h2>
-    <p>EquineVault may request permission to send local push notifications for vaccination, farrier, and Coggins test reminders. These notifications are generated entirely on your device and do not involve any remote server communication.</p>
-
-    <h2>6. Backup and Export</h2>
-    <p>The App provides backup and PDF export features:</p>
+    <h2>4. Permissions</h2>
+    <p>EquineVault requests the following device permissions:</p>
     <ul>
-        <li>Backup files are created locally on your device</li>
-        <li>Backups may be encrypted using a password you set</li>
-        <li>We do not store or have access to your backup password</li>
-        <li>Sharing is done through your device's native sharing system</li>
+        <li><strong>Camera (optional):</strong> Used solely to take photos of your horses and health documents. Photos are stored on your device only and are never uploaded.</li>
+        <li><strong>Photo Library (optional):</strong> Used solely to select existing photos of your horses. Selected photos remain on your device and are never uploaded.</li>
+        <li><strong>Notifications (optional):</strong> Used solely to remind you of upcoming vaccinations, farrier appointments, and Coggins test renewals. Notification scheduling is handled entirely on-device.</li>
+    </ul>
+    <p>No other permissions are requested.</p>
+
+    <h2>5. Data Retention & Deletion</h2>
+    <p>You have full control over your data. You can delete individual records or all data at any time via the in-app Settings screen. Uninstalling the app removes all data permanently.</p>
+    <p>We have no backup of your data because we never had it in the first place.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>EquineVault does not knowingly collect data from children under 13. Since we collect no data at all, this policy is inherently satisfied.</p>
+
+    <h2>7. International Users</h2>
+    <p>Since all data stays on your device and no data crosses borders, this privacy policy applies equally to all users worldwide regardless of jurisdiction.</p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>If we ever change this policy (which we have no reason to — our commitment to zero data collection is foundational), we will update this page and the in-app privacy label. Changes will only apply to future app versions and will never retroactively collect data.</p>
+
+    <h2>9. Contact</h2>
+    <p>If you have questions about this privacy policy, contact us at:</p>
+    <p><strong>longchen8924@gmail.com</strong></p>
+
+    <h2>10. App Store Privacy Labels</h2>
+    <p>EquineVault's App Store privacy labels confirm:</p>
+    <ul>
+        <li><strong>Data Not Collected:</strong> The developer does not collect any data from this app.</li>
     </ul>
 
-    <h2>7. Third-Party Services</h2>
-    <p>EquineVault does not integrate with any third-party services, SDKs, or APIs. The App operates entirely offline.</p>
-
-    <h2>8. Children's Privacy</h2>
-    <p>EquineVault does not knowingly collect any information from children under the age of 13.</p>
-
-    <h2>9. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Changes will be reflected on this page with an updated date.</p>
-
-    <h2>10. Contact Us</h2>
-    <p>If you have any questions, please contact us at:</p>
-    <p><strong>Email:</strong> longchen8924@gmail.com</p>
-
-    <div class="footer"><p>&copy; 2026 EquineVault. All rights reserved.</p></div>
-</div>
+    <hr style="margin-top: 40px; border-color: #AE8438;">
+    <p style="font-size: 13px; color: #999; text-align: center;">
+        EquineVault — Horse Health Records<br>
+        Made with 🐴 for horse owners who value privacy.
+    </p>
 </body>
 </html>
